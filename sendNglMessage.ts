@@ -51,5 +51,5 @@ app.post('/send', async (req: Request, res: Response): Promise<void> => {
 });
 
 app.listen(PORT, () => {
-  console.log(`NGL sender server running at http://localhost:${PORT}`);
+  console.log(`NGL sender server running at ${PORT}`);
 });
