@@ -34,6 +34,27 @@ Before using this script, ensure that you have the following installed:
 ```bash
 npx ts-node sendNglMessage.ts
 ```
+2. The server runs on port 3000 by default, you see the following mssage on your console
+
+   ```bash
+   NGL sender server running at http://localhost:3000
+   ```
+3.  Send a message by sending a POST request to http://localhost:3000/send with the following JSON body:
+   ```bash
+   {
+  "link": "https://ngl.link/your-username",
+  "message": "Hello from my script!",
+  "count": 10
+}
+   ```
+## Response
+Upon successful submission, you will receive a response in JSON format indicating that the messages were sent:
+```bash
+{
+  "success": true,
+  "message": "Sent 10 messages to https://ngl.link/hgghh60560"
+}
+```
 
 ## License
 
